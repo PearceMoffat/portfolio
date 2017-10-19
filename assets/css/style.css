@@ -1,0 +1,56 @@
+body {
+	background: url("../images/curls.png");
+	color: #848484;
+}
+
+h1, h2 {
+	text-align: center;
+	color: #666666;
+}
+
+#me {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#mainContainer {
+	margin-top: 50px;
+}
+
+#info {
+	border: 2px #090909 solid;
+	background-color: #151515;
+	margin-bottom: 40px;
+}
+
+#contact {
+	border: 2px #090909 solid;
+	background-color: #151515;
+	margin-bottom: 40px;
+}
+
+#links {
+	border: 2px #090909 solid;
+	background-color: #151515;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+#projects {
+	border: 2px #090909 solid;
+	background-color: #151515;
+}
+
+.imglinks {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.projectImage {
+	margin: 0 10px 30px 16px;
+	width: 100px;
+	height: 100px;
+	float: left;
+}

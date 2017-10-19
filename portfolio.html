@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container" id="mainContainer">
+        <div class="row">
+            <div class="col-md-7 col-sm-12" id="infoContainer">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12" id="info">
+                        <h1>My Story</h1>
+                        <hr>
+                        <img id="me" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" alt="Pearce Moffat">
+                        <p>My name is Steven Pearsall Moffat Jr, but I go by Pearce. Since I was young I have been passionate about puzzles and problem solving, and now I have transferred those skills into programming. I recently completed a full-stack web bootcamp at the UCSD extension campus, and am now looking to get a full time job as a full-stack web developer.</p>
+                        <p>Click on the images under "Connect with me" to see my github, linkedin, and stack overflow pages. You can also see some examples of projects I've worked on by clicking the images under the "View my work" section. And if you'd like to send me a message, use the form below. Thanks for stopping by!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12" id="contact">
+                        <h2>Send me a message</h2>
+                        <hr>
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                    <label>Name</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                    <label>Email Address</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                    <label>Phone Number</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 hidden-sm"></div>
+            <div class="col-md-4 col-sm-12" id="sidebarContainer">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12" id="links">
+                        <h2>Connect with me</h2>
+                        <hr>
+                        <div class="imglinks">
+                            <a href="https://github.com/PearceMoffat" target="_blank"><img id="img1" src="assets/images/github.png" class="img-responsive" alt="GitHub" height="64" width="64"></a>
+                            <a href="https://www.linkedin.com/in/steven-moffat-6a036a141/" target="_blank"><img id="img2" class="img-responsive" src="assets/images/linkedin.png" alt="LinkedIn" height="64" width="64"></a>
+                            <a href="https://stackoverflow.com/users/8328326/pearce-moffat" target="_blank"><img id="img3" class="img-responsive" src="assets/images/stackoverflow.png" alt="StackOverflow" height="64" width="64"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12" id="projects">
+                        <h2>View my work</h2>
+                        <hr>
+                        <div class="row" id="beekn">
+                        	<a href="http://beekn.buzz/" target="_blank">
+                            <img src="assets/images/beekn.png" class="projectImage"></a>
+                            <p>Beekn is a GPS-driven, location-based event organizer.</p>
+                            <p>I was on a team of 5 developers that worked on Beekn.</p>
+                        </div>
+                        <div class="row" id="domainWars">
+                        	<a href="https://domain-wars.herokuapp.com/" target="_blank">
+                            <img src="assets/images/domainwars.png" class="projectImage"></a>
+                            <p>Domain Wars is an online card game where users build a deck and play against a computer opponent.</p>
+                            <p>I was on a team of 4 developers that worked on Domain Wars.</p>
+                        </div>
+                        <div class="row" id="gameStart">
+                        	<a href="https://dhwyll.github.io/GameStart/" target="_blank">
+                            <img src="assets/images/gamestart.png" class="projectImage"></a>
+                            <p>GameStart is a website that helps people interested in getting started with gaming.</p>
+                            <p>I was on a team of 4 developers that worked on GameStart.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+    </footer>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>
+
+</html>
